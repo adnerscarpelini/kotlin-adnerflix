@@ -1,9 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".FormLogin">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_logo_svg"
+        android:layout_marginStart="20dp"
+        />
+
+    <!--  fundo e arredondamento é um shape desenhado na pasta drawable -->
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edit_text_login"
+        android:padding="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/txt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_login"
+        android:padding="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Senha"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/txt_erro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="1dp"
+        />
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precisa de ajuda?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+
+    <TextView
+        android:id="@+id/txt_tela_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo por aqui? Inscreva-se agora."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

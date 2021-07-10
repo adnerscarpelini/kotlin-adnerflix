@@ -21,5 +21,6 @@ class FormCadastro : AppCompatActivity() {
         toolbar.setBackgroundColor(getColor(R.color.white))
         toolbar.setNavigationIcon(getDrawable(R.drawable.ic_logo_svg))
 
+        
     }
 }

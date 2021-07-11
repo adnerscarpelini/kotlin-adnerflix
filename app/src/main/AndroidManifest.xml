@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adnerflix">
-        <activity android:name=".FormListaFilmes"></activity>
+        <activity android:name=".FormDetalhesFilme"></activity>
+        <activity android:name=".FormListaFilmes" />
         <activity android:name=".FormCadastro" />
         <activity android:name=".FormLogin" />
         <activity android:name=".MainActivity">

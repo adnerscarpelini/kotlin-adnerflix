@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.GridLayout
+import androidx.recyclerview.widget.GridLayoutManager
+import com.adner.adnerflix.Adapter.FilmesAdapter
+import com.adner.adnerflix.Model.addFilmes
 import com.adner.adnerflix.databinding.ActivityFormCadastroBinding
 import com.adner.adnerflix.databinding.ActivityFormListaFilmesBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -18,6 +22,13 @@ class FormListaFilmes : AppCompatActivity() {
         binding = ActivityFormListaFilmesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        //O RecyclerView cria uma lista dinamica
+        //O Dataset é o objeto que repete na lista, nesse caso a capa do filme
+        val recycler_filmes = binding.recyclerView
+        recycler_filmes.adapter = FilmesAdapter(addFilmes())
+        //Informa que a lista deve ser renderizada em 3 colunas
+        recycler_filmes.layoutManager = GridLayoutManager(applicationContext, 3)
 
     }
 

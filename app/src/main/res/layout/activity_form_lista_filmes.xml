@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_80"
     tools:context=".FormListaFilmes">
 
+    <!-- O RecyclerView cria uma lista dinamica -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!-- O Dataset é o objeto que repete na lista, nesse caso a capa do filme -->
 </androidx.constraintlayout.widget.ConstraintLayout>

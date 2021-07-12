@@ -2,13 +2,12 @@
 A Netflix interface clone using Kotlin and Android Studio.
 Authentication and Files integrated with Firebase Auth and Firebase Storage.
 
-Create Account
 ![Create Account](https://github.com/adnerscarpelini/Adnerflix/blob/main/ProjectImages/CriarUsuario.gif?raw=true "Create Account")
 
-Sign In
+
 ![Sign In](https://github.com/adnerscarpelini/Adnerflix/blob/main/ProjectImages/Login.gif?raw=true "Sign In")
 
-Resourses
+
 ![Resourses](https://github.com/adnerscarpelini/Adnerflix/blob/main/ProjectImages/Navegacao.gif?raw=true "Resourses")
 
 ### 🚀 Technologies

@@ -8,6 +8,7 @@ import com.adner.adnerflix.Adapter.FilmesAdapter
 import com.adner.adnerflix.Model.addFilmes
 import com.adner.adnerflix.databinding.ActivityFormDetalhesFilmeBinding
 import com.adner.adnerflix.databinding.ListaFilmesBinding
+import com.squareup.picasso.Picasso
 
 class FormDetalhesFilme : AppCompatActivity() {
 
@@ -28,6 +29,13 @@ class FormDetalhesFilme : AppCompatActivity() {
         recycler_outrosfilmes.layoutManager =
             GridLayoutManager(applicationContext, 3) //Grade com 3 colunas
 
+
+        //Pegar imagem do firebase storage
+        val capaTheWitcher =
+            "https://firebasestorage.googleapis.com/v0/b/adnerflix.appspot.com/o/video.jpg?alt=media&token=6057f111-54fd-47e4-9552-7c08a5cab1f7"
+
+        //Usar a biblioteca Picasso para recuperar a imagem e carregar no imageview
+        Picasso.get().load(capaTheWitcher).fit().into(binding.imgCapa)
 
     }
 

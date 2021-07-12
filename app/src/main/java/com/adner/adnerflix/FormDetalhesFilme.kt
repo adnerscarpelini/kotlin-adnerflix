@@ -37,6 +37,12 @@ class FormDetalhesFilme : AppCompatActivity() {
         //Usar a biblioteca Picasso para recuperar a imagem e carregar no imageview
         Picasso.get().load(capaTheWitcher).fit().into(binding.imgCapa)
 
+        binding.imgPlayVideo.setOnClickListener {
+            val intent = Intent(this, FormVideo::class.java)
+            startActivity(intent)
+
+        }
+
     }
 
     private fun GerarToolBar() {

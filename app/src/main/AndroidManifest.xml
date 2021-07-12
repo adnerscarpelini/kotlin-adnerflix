@@ -11,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adnerflix">
-        <!--  android:screenOrientation="portrait" desativa a rotação -->
+
+        <!-- android:screenOrientation="portrait" desativa a rotação -->
+
+        <activity
+            android:name=".FormVideo"
+            android:screenOrientation="landscape"></activity>
+
         <activity
             android:name=".FormDetalhesFilme"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FormListaFilmes"
             android:screenOrientation="portrait" />
